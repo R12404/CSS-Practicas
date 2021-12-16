@@ -1,0 +1,40 @@
+/* SELECTORES AVANZADOS */
+
+* { /* Podemos utilizar el selector universal para estipular reglas de manera universal*/
+    color: blue; /*De esta manera declaramos que todos los textos dentro de esta pagina sean azules*/
+    font-size: 50px; /*De esta manera especificamos que el tamaño de la fuente de todos los textos sea de 50px*/ 
+    margin-left: 30px;
+}
+
+h1, h2 , p { /* Podemos agrupar elementos y darles estilos a todos a la misma vez separandolos por una coma*/
+    color: black; /*Asi decimos que a los elementos seleccionados se le de un color de fuente negro*/
+}
+
+header h1 { /*De esta manera decimos que todos los elementos de tipo h1 que se encuetren dentro de la etiqueta header se les de un color de fuente rojo*/
+    color: red;
+}
+
+/* SELECTORES HIJOS */
+
+p>span { /*De esta manera especificamos que todas las etiquetas de tipo span que sean hijas de un parrafo se le den los siguientes estilos*/
+    color: green;
+}
+
+/* SELECTORES ADYACENTES */
+
+h1 + h2 { /*De esta manera decimos que todos los h2 que vengan despues de un h1 se le agreguen los siguientes estilos*/
+    color: blueviolet;
+}
+
+/* SELECTORES HERMANOS (Estan contenidos dentro de un div o viene uno despues del otro) */ 
+
+h1~h2 { /*Los elementos h2 que sean hermanos de un h1 tendrán los siguientes estilo*/
+    color: brown;
+}
+
+/* SELECTORES DE ATRIBUTOS */
+
+input[type="text"]{ /*De esta manera imponemos la regla de que todos los elementos input de type TEXT tendrán un color de fondo verde*/
+    background-color: green;
+}
+

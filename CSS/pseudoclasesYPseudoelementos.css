@@ -1,0 +1,48 @@
+/* PSEUDOCLASES Y PSEUDOELEMENTOS 
+Generalmente son utilizadas para cambiar estilos cuando el usuario hace una determinada accion 
+- Pseudoclases se coloca solo " : "
+- Pseudoelementos se coloca " :: "
+*/
+
+button:hover { /*Esta pseudoclases es utilizada para cuando el usuario pasa el cursor sobre el elemento*/
+    background-color: aqua;
+    padding: 5px 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: deeppink;
+}
+
+button:active { /*Esta pseudoclase es utilizada cuando el usuarion da click al elemento*/
+    background-color: chartreuse;
+}
+
+#texto:target { /*Esta pseudoclase se utiliza para cambiar el color del texto cuando se da click en un enlace especifico*/
+    color: blue;
+}
+
+input:focus { /*Esta pseudoclase es utilizada cuando el usuario esta posicionado sobre un elemento, si el usuario esta sobre el elemento entonces el elemento 
+    mantendrá los estilos proporcionados*/
+    background-color: darkgray;
+}
+
+p::selection { /*Este pseudoelemento se utiliza cuando el usuario selecciona el parrafo (como si lo copiaras) entonces dictaminará todos los estilos proporcionados*/
+    background-color: green;
+}
+
+p::first-line { /*A través de este pseudoelemento especificamos que a la primera linea de un parrafo dictamine el estilo acontinuacion*/
+    color: red;
+}
+
+p::first-letter { /*a través de este pseudoelemento especificamos que la primera letra de un parrafo se le de el siguiente estilo*/
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+}
+
+p::before { /*A través de esta pseudoelemento podemos especificar que antes de un parrafo se incluya la frase proporcionada como estilo */
+    content: "Soy un texto previo. " ;
+}
+
+p::after {/*A través de esta pseudoelemento podemos especificar que despues de un parrafo se incluya la frase proporcionada como estilo */
+
+}

@@ -1,0 +1,43 @@
+/* UNIDADES DE MEDIDA */
+
+/* MEDIDAS ABSOLUTAS (Son los pixeles. PX)
+- Se usan para elementos que no van a cambiar inclusive cuando se escale la ventana del navegador o para otros dispositivos
+*/
+
+
+/* MEDIDAS RELATIVAS 
+-> Tenemos el siguiente grupo 
+- Porcentaje % (Relativo a un elemento padre)
+
+- em (relativo al tamaño de letra del elemento)
+por defecto el tamaño de fuente de un texto es de 16px 
+Cuando utilizamos esta unidad de medida estamos multiplicando por su tamaño por defecto
+ejemplo 2em = 2 * 16px
+*/
+
+
+.padre {
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.hijo {
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+}
+
+.nieto {
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+#prueba-background {
+    width: 500px;
+    height: 500px;
+    /* background: linear-gradient(180deg, yellow 33.3%, blue 33.3%, red ); */
+    background: -webkit-radial-gradient(top, circle, red 50%, orange 50%);
+    /* Se puede poner circle o ellipse */
+}
