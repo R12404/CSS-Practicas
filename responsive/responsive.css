@@ -1,0 +1,68 @@
+/* Tamaños estandar de los dispositivos 
+
+XS suelen ser menores a 576px (mini movil)
+SMALL suelen ser mayor o 576px (mivil standar)
+MEDIUM suelen ser mayor o igual a 768px (tablets)
+LARGE suelen ser mayor o igual 992px (tablet grande o miniportatil)
+EXTRA LARGE suelen ser mayor o igual a 1200px (computadores de escritorio)
+EXTRA EXTRA LARGE suelen ser mayores a 1400px (pantalla de televisor)
+
+
+*/
+
+
+body {
+    background-color: #994136;
+    width: 100%;
+    height: 640px;
+}
+
+h1 {
+    font-size: 28px;
+    background-color: #E6766A;
+    text-align: center;
+}
+
+h2 {
+    background-color: #FF9A8B;
+}
+
+h3 {
+    background-color: #FFBB8F;
+}
+
+main {
+    background-color: #E6766A;
+    text-align: center;
+}
+
+footer {
+    background-color: #E6766A;
+    width: 100%;
+    height: 200px;
+}
+
+footer div {
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    background-color: #FFBB8F;
+    margin-top: 60px;
+}
+
+.n1 {
+    position: relative;
+    top: 30px;
+}
+
+
+@media (min-width:600px){ /*De esta manera ajustamos los cambios de acuerdo al tamaño de la pantalla */
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width:300px) and (max-width:600px){ /*De esta manera establecemos un rango en el que se verán los estilos propuestos    */
+
+}
+

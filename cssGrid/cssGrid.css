@@ -1,0 +1,103 @@
+/* GRID
+
+grid container es el padre
+
+grid lines son lineas vertivales y horizontales
+
+grid track columnas o filas 
+
+grid cell una celda 
+
+grid area es una area de varias celdas
+
+grid items es todo lo que va dentro del container
+
+
+GRID-TEMPLATE-COLUMS: Hace referencia a cuántas columnas quiero
+GRID-TEMPLATE-ROWS: hace referencia a cuántas filas quiero
+*/
+
+/*
+container {
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    display: grid; Adaptará todos los elementos al ancho del contenedor (revisar)
+     grid-template-columns: repeat(4,25%); De esta manera dividimos el main container en 4 columnas (4 fracciones iguales) tambien puedes hacerlo con porcentajes 25% y multiplicar por el porcentaje ejemplo: repeat(4,25%) (Esto hará cuatro de columnas de un 25% de ancho con relacion al main container)
+     grid-template-rows: repeat(4,25%); 
+     grid-gap: 3px; Separación entre filas y columnas 
+     column-gap: 3px; Separación entre columnas
+     row-gap: 3px;Separación entre filas  
+     grid-auto-columns: 100px;
+    grid-auto-rows: 100px; 
+} 
+.box {
+    border: 1px solid black;
+    position: relative;
+} 
+
+.box1 {
+    Estos dos tipos de estilos son utilizados cuando queremos que una columna ocupe una cantidad de espacio especifico (como unir columnas)
+    grid-column-start: 1;
+    grid-column-end: 5;
+    Estos dos tipos de estilos son utilizados cuando queremos que una fila ocupe una cantidad de filas especificas (Como unir dos filas )
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: crimson;
+}
+
+.box2 {
+    Este estilo nos permitirá unir filas y columnas
+    grid-area: inicioFila/inicioColumna/filaFinal/columnaFinal;
+    grid-area: 3/1/5/3;
+}
+
+.box5 {
+    De esta manera podemos unir filas y columnas donde la union ira desde la fila y columna 3 hasta la fila y columna 5 
+    grid-row: 3/5;
+    grid-column: 3/5;
+    background-color: blue;
+}
+*/
+
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 3px solid black;
+}
+
+
+.box {
+    border: 1px solid black;
+}
+
+/* Manejar GRID de manera resumida */
+.container {
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside"
+    "main main main aside"
+    "footer footer footer footer"
+    ;
+}
+
+.box1, .box2, .box3, .box4 {
+    grid-area: header;
+}
+
+.box5, .box6, .box7, .box9, .box10, .box11 {
+    grid-area: main;
+}
+
+.box8, .box12 {
+    grid-area: aside;
+}
+
+.box13, .box14, .box15, .box16 {
+    grid-area: footer;
+}

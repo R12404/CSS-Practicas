@@ -1,0 +1,60 @@
+/* MANEJO DE FLEXBOX
+FLEXBOX trabaja con dos direcciones 
+main axis: eje x
+cross axis: eje y
+
+justify-content: me permite alinear los elementos de sobre el eje x
+align-items: me permite alinear los elementos sobre el eje y
+align-content: me permite alinear los elementos sobre el eje y (Cuando ya tengo más de una fila de elementos, por lo tanto pasaria a remplazar a align-items)
+*/
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    display: flex; /*De esta manera empezamos a manejar el concepto de flexbox. El display flex nos cambiara las cajas de bloque a renglon*/
+    flex-direction: row; /*De esta manera establecemos que las cajas se fijen con relación al eje y (row por defecto: las fija en relación al eje x)*/
+    justify-content: space-evenly; /*De esta manera repartimos en partes iguales las cajas teniendo como base el main container*/
+    align-items: flex-end; /*Asi podemos alinear los items que contiene el main container*/
+    flex-wrap: wrap; /*Ajusta el contenido si ya no alcanza el main container*/
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.box1{
+    background-color: red;
+}
+.box2{
+background-color: blue;
+}
+.box3{
+background-color: yellow;
+}
+.box4{
+background-color: green;
+}
+.box5{
+    background-color: pink;
+}
+
+.box6{
+    background-color: darkgray;
+}
+.box7{
+    background-color: brown;
+}
+.box8{
+    background-color: gold;
+}
+.box9{
+    background-color: orange;
+}
+
+.box10{
+    background-color: cornflowerblue;
+}

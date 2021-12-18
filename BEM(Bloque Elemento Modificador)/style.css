@@ -1,0 +1,9 @@
+/* BEM Bloque Elemento Modificador 
+Es una sintaxis para llamar a las clases (Evitar conflictos entre las clases)
+
+Estructura 
+
+BLOQUE__ELEMENTO--MODIFICADOR
+
+El modificador juega el papel de diferenciador (Para dar estilos especificos solo al elemento al cual se le puso)
+*/

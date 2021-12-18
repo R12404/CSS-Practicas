@@ -1,0 +1,22 @@
+/* Podemos crear variables en css 
+Las variables pueden ser reutilizadas
+-Declarar variables 
+    :root {Aqui van las variables}
+
+Para declarar una variable utilizamos "--nombreVariable: valor;"
+
+*/
+
+
+/* Asi declaramos una lista de variables */
+:root {
+    --colorFondo: green;
+    --tamañoTitulo: 30px;
+    --anchoDiv: 90%;
+}
+
+/* Así las utilizamos */
+div {
+    background-color: var(--colorFondo);
+    width: var(--anchoDiv);
+}

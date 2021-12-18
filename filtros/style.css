@@ -1,0 +1,15 @@
+.image {
+    background-image: url(./IMG_20210819_121129.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    filter: blur(3px); /*Para desenfoque (pone borrosa la imagen)*/
+    filter: brightness(100%);/*Para el brillo (solo se maneja en porcentaje)*/
+    filter: contrast(100%); /*Para contrastes (recuerda el meme de "te ves radiante")*/
+    filter: drop-shadow(9px 9px 9px green); /*para sombras (sigue la misma estructura del box-shadow)*/
+    filter: grayscale(50%); /*Para blanco y negro*/
+    filter: hue-rotate(290deg);/*Para saturación (se maneja en grados (deg))*/
+    filter: invert(30%); /*Para negativos-frios (recuerda el meme de "te ves radiante")*/
+    filter: saturate(7);/*Para positivos-calidos (recuerda el meme de "te ves radiante")*/
+}

@@ -44,5 +44,5 @@ p::before { /*A través de esta pseudoelemento podemos especificar que antes de 
 }
 
 p::after {/*A través de esta pseudoelemento podemos especificar que despues de un parrafo se incluya la frase proporcionada como estilo */
-
+    content: "Soy el último texto. ";
 }
