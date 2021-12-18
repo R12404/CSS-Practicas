@@ -1,0 +1,26 @@
+/*Los clipPath nos ayudan a hacer figuras con nuestras imagenes o DIV*/
+
+
+.container {
+    background-color: crimson;
+    width: 500px;
+    height: 500px;
+}
+
+.cubo {
+    background-image: url(./IMG_20210819_121129.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    clip-path: inset(90px); /*Para crear un marco de 90px top right bottom left*/
+    clip-path: circle(300px); /*Hace marco circular*/
+    clip-path: ellipse(100px 150px); /*Recibe dos paramentros el radio en x y el radio en y*/
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); /*De esta manera manejamos poligonos*/
+} 
+
+/* https://bennettfeely.com/clippy/
+
+Esta página nos permite hacer las figuras mucho más rapido
+Esto nos dará el código y solo es copiar y pegar
+*/

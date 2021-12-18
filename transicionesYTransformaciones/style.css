@@ -1,0 +1,48 @@
+/* TRANSICIONES
+
+transition: propiedad duracion delay 
+timing funtion: (ease desacelerar,
+linear lineal, 
+ease-in acelera poco a poco,
+ease-out desacelera poco a poco,
+ease-in-out lento-rapido-lento)
+*/
+
+
+
+
+
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: darkorange;
+}
+
+div:hover {
+    background-color: darkgreen;
+    /* transaction: propiedad que quiero animar - lo que quiero que tarde - empieza inmediatamente cuando el usuario ponga el cursor sobre el div - acelera poco a poco*/
+    transition: background-color 1s 0s ease-in;
+}
+
+div:active {
+    transform: rotateZ(90deg); /*Esta propiedad nos permitará dar una animacion de giro*/
+    transition: transform 4s 0s linear;
+}
+
+div:hover {
+    /* transform: scale(primervalor (lo que queremos que se reduzca en el eje x), segundoValor(lo que queremos que se redusca en el eje y)); */
+    transform: scale(0.5); /*Esto es una animación que reducirá a la mitad de sus pixeles la figura que hagamos */
+    transition: transform 3s 0s linear;
+}
+
+div:hover {
+    transform: translate(300px, 140px); /*Esta es una animación que nos permite mover objetos sobre el eje x (primer parametro) y el eje y (Segundo parametro)*/
+    transition: transform 7s 0s linear;
+}
+
+div:hover {
+    transform: skew(90deg, 20deg); /*Parecido a un holograma primer parametro (eje x) segundo prametro (eje y)*/
+    transition: transform 5s 0s linear;
+}
+
