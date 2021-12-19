@@ -11,3 +11,14 @@
 3- identificadores o id
 4- Estilos en linea 
 5- Los famosos !important
+
+
+<!-- 
+Esta pagina nos ayuda a bajar las dimensiones a las imagenes https://www.photopea.com/
+
+
+Esta página nos permite hacer las figuras mucho más rapido https://bennettfeely.com/clippy/
+Esto nos dará el código y solo es copiar y pegar
+
+
+ -->

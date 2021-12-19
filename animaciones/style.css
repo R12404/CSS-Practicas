@@ -1,0 +1,81 @@
+/* ANIMACIONES 
+ESTRUCTURA (Se debe seguir este orden para que funcione)
+
+animation: 
+- name 
+- duration 
+- timing funtion: (ease desacelerar,
+linear lineal, 
+ease-in acelera poco a poco,
+ease-out desacelera poco a poco,
+ease-in-out lento-rapido-lento)
+- delay 
+- iteration-count
+- animation-fill-mode(none, forward)
+
+Las animaciones se crean con keyframes nombreAnimacion {
+
+}
+*/
+
+
+div {
+    background-color: crimson;
+    width: 500px;
+    height: 667px;
+    /* border: 3px solid black; */
+    background-image: url(./IMG_20210819_121128.jpg);
+    clip-path: circle(220px at 280px 410px); 
+    /* transform: scale(0.6); */
+    /* animation: girar 4s linear 0s infinite none; */
+    animation: imagen 4s linear 0s infinite none;
+}
+
+/* @keyframes girar {
+    from{ 
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateZ(360deg);
+    }
+} */
+
+
+@keyframes raro {
+    0% { /*Con esto le decimos que al iniciar se posicione sobre 0 grados*/
+        transform: rotateZ(0deg);
+    }
+
+    25% { /*Pasado el 25% del tiempo debe haber girado*/
+        transform: rotateZ(360deg);
+    }
+
+    50% { /*Sobre la mitad del tiempo se movera 400px en x y 500px en y*/
+        transform: translate(400px, 500px);
+        background-color: blue;
+    }
+
+    75% {
+        transform: scale(0.5);
+        background-color: green;
+    }
+
+    90% {
+        transform: skew(90deg, 20deg);
+    }
+
+    100% {
+        /* transform: translateX(90px); */
+    }
+}
+
+@keyframes imagen {
+    0% {
+        clip-path: circle(120px at 280px 410px);
+    }
+
+    100% {
+        clip-path: circle(220px at 280px 410px) ;
+    }
+}
